@@ -1,3 +1,13 @@
+
+#Begin Logging
+$logDate = Get-Date -DisplayHint datetime
+$logFile = "C:\Logs\LogonHoursLog.txt"
+
+# # #Declare Variables
+
+#Bring in the date in the format it will be used to compare if the AD Group and or User in the group has ben modified
+#$shortDate = Get-Date -Format M/d/yyyy
+
 function Log {
     param (
       [Parameter(Mandatory=$true)][string]$msg
