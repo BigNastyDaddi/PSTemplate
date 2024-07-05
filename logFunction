@@ -1,0 +1,13 @@
+function Log {
+    param (
+      [Parameter(Mandatory=$true)][string]$msg
+    )
+    Add-Content -Path $logFile $msg -Force
+  }
+  
+
+
+
+ Log "*****************************************************             $LogDate             **********************************************************"
+ Log " "
+
